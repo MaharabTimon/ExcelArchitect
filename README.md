@@ -1,20 +1,20 @@
-﻿<div align="center">
+<div align="center">
 
-# ðŸ“Š ExcelArchitect â€” AI Spreadsheet Co-Pilot
+# 📊 ExcelArchitect — AI Spreadsheet Co-Pilot
 
 **A desktop spreadsheet engineering application combining PyQt6, Pandas, OpenPyXL, and Groq LLMs for natural-language Excel transformations.**
 
-[![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue.svg?logo=python&logoColor=white)](https://python.org)
-[![GUI Framework](https://img.shields.io/badge/GUI-PyQt6-41CD52.svg?logo=qt&logoColor=white)](https://riverbankcomputing.com/software/pyqt/)
-[![Groq Cloud](https://img.shields.io/badge/LLM-Groq%20Llama--3.3-F55036.svg)](https://groq.com/)
-[![Pandas Engine](https://img.shields.io/badge/Data-Pandas-150458.svg?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Python Version](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![GUI Framework](https://img.shields.io/badge/GUI-PyQt6-41CD52?style=for-the-badge&logo=qt&logoColor=white)](https://riverbankcomputing.com/software/pyqt/)
+[![Groq Cloud](https://img.shields.io/badge/LLM-Groq%20Llama--3.3-F55036?style=for-the-badge)](https://groq.com/)
+[![Pandas Engine](https://img.shields.io/badge/Data-Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
 <p align="center">
-  <a href="#-overview">Overview</a> â€¢
-  <a href="#-architecture">Architecture</a> â€¢
-  <a href="#-key-features">Key Features</a> â€¢
-  <a href="#-quick-start">Quick Start</a> â€¢
+  <a href="#-overview">Overview</a> •
+  <a href="#-architecture">Architecture</a> •
+  <a href="#-key-features">Key Features</a> •
+  <a href="#-quick-start">Quick Start</a> •
   <a href="#-example-prompts">Example Prompts</a>
 </p>
 
@@ -22,46 +22,46 @@
 
 </div>
 
-## ðŸ“Œ Overview
+## 📌 Overview
 
 **ExcelArchitect** bridges natural language and complex spreadsheet mutations. Powered by Groq's high-speed inference engine (`llama-3.3-70b-versatile`), it generates strictly scoped Python and OpenPyXL code executed inside an isolated sandbox environment, featuring automatic styling, chart generation, live schema inspection, and multi-step state undo/redo.
 
 ---
 
-## ðŸ—ï¸ Architecture
+## 🏗️ Architecture
 
 ```mermaid
 flowchart TD
-    A[ðŸ–¥ï¸ PyQt6 Modern Dark Desktop GUI] --> B[ðŸ“‹ Data Preview & Schema Inspector]
-    A --> C[ðŸ’¬ Natural Language Instruction]
+    A[🖥️ PyQt6 Modern Dark Desktop GUI] --> B[📋 Data Preview & Schema Inspector]
+    A --> C[💬 Natural Language Instruction]
     
-    B & C --> D[ðŸ§  Contextual Schema Prompt Engine]
-    D --> E[âš¡ Groq LLaMA 3.3 70B Code Generator]
+    B & C --> D[🧠 Contextual Schema Prompt Engine]
+    D --> E[⚡ Groq LLaMA 3.3 70B Code Generator]
     
-    E --> F[ðŸ›¡ï¸ Isolated Python Sandbox exec Scope]
-    F --> G1[ðŸŽ¨ OpenPyXL Theming & Auto-Fit]
-    F --> G2[ðŸ“Š Native Excel Bar/Pie/Line Charts]
-    F --> G3[ðŸ”¢ Pandas Aggregations & Formulas]
+    E --> F[🛡️ Isolated Python Sandbox Scope]
+    F --> G1[🎨 OpenPyXL Theming & Auto-Fit]
+    F --> G2[📊 Native Excel Bar/Pie/Line Charts]
+    F --> G3[🔢 Pandas Aggregations & Formulas]
     
-    G1 & G2 & G3 --> H[ðŸ’¾ Updated Workbook *_Updated.xlsx]
-    H --> I[â†©ï¸ Multi-Step Undo / Redo History Stack]
+    G1 & G2 & G3 --> H[💾 Updated Workbook *_Updated.xlsx]
+    H --> I[↩️ Multi-Step Undo / Redo History Stack]
 ```
 
 ---
 
-## âœ¨ Key Features
+## ✨ Key Features
 
 | Feature | Description |
 | :--- | :--- |
-| ðŸ—£ï¸ **Natural Language Commands** | Perform calculations, data cleaning, filtering, and cell styling using plain English instructions. |
-| ðŸŽ¨ **Automated OpenPyXL Styling** | Generate custom header themes, alternating row stripes, conditional formatting rules, and auto-fit widths. |
-| ðŸ“ˆ **Native Chart Generation** | Embed Excel BarCharts, PieCharts, and LineCharts linked directly to summary datasets. |
-| â†©ï¸ **Multi-Step Undo Stack** | Snapshot-based history manager allows seamless one-click rollbacks to previous workbook states. |
-| ðŸ” **Live Schema Inspector** | Real-time summary displaying row counts, column types, null counts, and distinct value cardinality. |
+| 🗣️ **Natural Language Commands** | Perform calculations, data cleaning, filtering, and cell styling using plain English instructions. |
+| 🎨 **Automated OpenPyXL Styling** | Generate custom header themes, alternating row stripes, conditional formatting rules, and auto-fit widths. |
+| 📈 **Native Chart Generation** | Embed Excel BarCharts, PieCharts, and LineCharts linked directly to summary datasets. |
+| ↩️ **Multi-Step Undo Stack** | Snapshot-based history manager allows seamless one-click rollbacks to previous workbook states. |
+| 🔍 **Live Schema Inspector** | Real-time summary displaying row counts, column types, null counts, and distinct value cardinality. |
 
 ---
 
-## âš™ï¸ Quick Start
+## ⚙️ Quick Start
 
 ### 1. Clone & Set Up Environment
 ```bash
@@ -89,7 +89,7 @@ python app.py
 
 ---
 
-## ðŸ’¡ Example Prompts
+## 💡 Example Prompts
 
 - *"Format headers dark navy with white bold text, freeze the top row, and auto-fit all column widths."*
 - *"Remove duplicate rows based on Customer ID and highlight values over 5000 in green."*
@@ -98,6 +98,5 @@ python app.py
 
 ---
 
-## ðŸ“„ License
+## 📄 License
 This project is open-source and licensed under the [MIT License](LICENSE).
-
