@@ -1,6 +1,6 @@
-<div align="center">
+﻿<div align="center">
 
-# 📊 ExcelArchitect — AI Spreadsheet Co-Pilot
+# ðŸ“Š ExcelArchitect â€” AI Spreadsheet Co-Pilot
 
 **A desktop spreadsheet engineering application combining PyQt6, Pandas, OpenPyXL, and Groq LLMs for natural-language Excel transformations.**
 
@@ -11,10 +11,10 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 <p align="center">
-  <a href="#-overview">Overview</a> •
-  <a href="#-architecture">Architecture</a> •
-  <a href="#-key-features">Key Features</a> •
-  <a href="#-quick-start">Quick Start</a> •
+  <a href="#-overview">Overview</a> â€¢
+  <a href="#-architecture">Architecture</a> â€¢
+  <a href="#-key-features">Key Features</a> â€¢
+  <a href="#-quick-start">Quick Start</a> â€¢
   <a href="#-example-prompts">Example Prompts</a>
 </p>
 
@@ -22,50 +22,50 @@
 
 </div>
 
-## 📌 Overview
+## ðŸ“Œ Overview
 
 **ExcelArchitect** bridges natural language and complex spreadsheet mutations. Powered by Groq's high-speed inference engine (`llama-3.3-70b-versatile`), it generates strictly scoped Python and OpenPyXL code executed inside an isolated sandbox environment, featuring automatic styling, chart generation, live schema inspection, and multi-step state undo/redo.
 
 ---
 
-## 🏗️ Architecture
+## ðŸ—ï¸ Architecture
 
 ```mermaid
 flowchart TD
-    A[🖥️ PyQt6 Modern Dark Desktop GUI] --> B[📋 Data Preview & Schema Inspector]
-    A --> C[💬 Natural Language Instruction]
+    A[ðŸ–¥ï¸ PyQt6 Modern Dark Desktop GUI] --> B[ðŸ“‹ Data Preview & Schema Inspector]
+    A --> C[ðŸ’¬ Natural Language Instruction]
     
-    B & C --> D[🧠 Contextual Schema Prompt Engine]
-    D --> E[⚡ Groq LLaMA 3.3 70B Code Generator]
+    B & C --> D[ðŸ§  Contextual Schema Prompt Engine]
+    D --> E[âš¡ Groq LLaMA 3.3 70B Code Generator]
     
-    E --> F[🛡️ Isolated Python Sandbox exec Scope]
-    F --> G1[🎨 OpenPyXL Theming & Auto-Fit]
-    F --> G2[📊 Native Excel Bar/Pie/Line Charts]
-    F --> G3[🔢 Pandas Aggregations & Formulas]
+    E --> F[ðŸ›¡ï¸ Isolated Python Sandbox exec Scope]
+    F --> G1[ðŸŽ¨ OpenPyXL Theming & Auto-Fit]
+    F --> G2[ðŸ“Š Native Excel Bar/Pie/Line Charts]
+    F --> G3[ðŸ”¢ Pandas Aggregations & Formulas]
     
-    G1 & G2 & G3 --> H[💾 Updated Workbook *_Updated.xlsx]
-    H --> I[↩️ Multi-Step Undo / Redo History Stack]
+    G1 & G2 & G3 --> H[ðŸ’¾ Updated Workbook *_Updated.xlsx]
+    H --> I[â†©ï¸ Multi-Step Undo / Redo History Stack]
 ```
 
 ---
 
-## ✨ Key Features
+## âœ¨ Key Features
 
 | Feature | Description |
 | :--- | :--- |
-| 🗣️ **Natural Language Commands** | Perform calculations, data cleaning, filtering, and cell styling using plain English instructions. |
-| 🎨 **Automated OpenPyXL Styling** | Generate custom header themes, alternating row stripes, conditional formatting rules, and auto-fit widths. |
-| 📈 **Native Chart Generation** | Embed Excel BarCharts, PieCharts, and LineCharts linked directly to summary datasets. |
-| ↩️ **Multi-Step Undo Stack** | Snapshot-based history manager allows seamless one-click rollbacks to previous workbook states. |
-| 🔍 **Live Schema Inspector** | Real-time summary displaying row counts, column types, null counts, and distinct value cardinality. |
+| ðŸ—£ï¸ **Natural Language Commands** | Perform calculations, data cleaning, filtering, and cell styling using plain English instructions. |
+| ðŸŽ¨ **Automated OpenPyXL Styling** | Generate custom header themes, alternating row stripes, conditional formatting rules, and auto-fit widths. |
+| ðŸ“ˆ **Native Chart Generation** | Embed Excel BarCharts, PieCharts, and LineCharts linked directly to summary datasets. |
+| â†©ï¸ **Multi-Step Undo Stack** | Snapshot-based history manager allows seamless one-click rollbacks to previous workbook states. |
+| ðŸ” **Live Schema Inspector** | Real-time summary displaying row counts, column types, null counts, and distinct value cardinality. |
 
 ---
 
-## ⚙️ Quick Start
+## âš™ï¸ Quick Start
 
 ### 1. Clone & Set Up Environment
 ```bash
-git clone https://github.com/timon234/ExcelArchitect.git
+git clone https://github.com/MaharabTimon/ExcelArchitect.git
 cd ExcelArchitect
 python -m venv venv
 venv\Scripts\activate  # Windows
@@ -89,7 +89,7 @@ python app.py
 
 ---
 
-## 💡 Example Prompts
+## ðŸ’¡ Example Prompts
 
 - *"Format headers dark navy with white bold text, freeze the top row, and auto-fit all column widths."*
 - *"Remove duplicate rows based on Customer ID and highlight values over 5000 in green."*
@@ -98,5 +98,6 @@ python app.py
 
 ---
 
-## 📄 License
+## ðŸ“„ License
 This project is open-source and licensed under the [MIT License](LICENSE).
+
